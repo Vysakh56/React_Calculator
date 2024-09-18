@@ -1,0 +1,142 @@
+/* Style for the entire webpage */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(to bottom right, #0a0a0a, #1c1c1c); */
+  background: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style for the calculator container */
+.calculator {
+  /* width: auto;  */
+  max-width: 600px; /* Set a max width */
+  border-radius: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: rgba(30, 30, 30, 0.95); 
+  display: flex;
+  flex-direction: column;
+  border: solid 4px white;
+}
+
+/* Calculator heading */
+.heading {
+  /* background: linear-gradient(90deg, #ff00cc, #3333ff); */
+  background: #212121;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  text-shadow: 0 0 5px rgba(255, 0, 204, 0.7), 0 0 20px rgba(51, 51, 255, 0.7);
+}
+
+/* Display area styling */
+.display {
+  background: #212121;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: right;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30%;
+}
+
+/* Expression text styling */
+.expression {
+  font-size: 22px;
+  color: #b0b0b0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Input text styling */
+.input {
+  font-size: 48px;
+  color: #ffffff;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: calc(100% - 30px);
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #2c3e50;
+
+}
+
+/* General button styling */
+button {
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  min-height: 70px;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Button hover effects */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Button gradient colors */
+button.number {
+  background: rgb(53,53,57);
+background: linear-gradient(90deg, rgba(53,53,57,1) 100%, rgba(10,10,10,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+button.number:hover {
+  background: linear-gradient(90deg, #2980b9, #1abc9c);
+}
+
+button.operator {
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(159,43,172,1) 0%);
+}
+
+button.operator:hover {
+  background: linear-gradient(90deg, #d35400, #c0392b);
+}
+
+button.special {
+  background: rgb(53,53,57);
+background: linear-gradient(90deg, rgba(53,53,57,1) 100%, rgba(10,10,10,1) 100%, rgba(0,212,255,1) 100%);
+ color:violet;
+}
+
+button.special:hover {
+  background: linear-gradient(90deg, #c0392b, #e74c3c);
+}
+
+
+button.operator_extra {
+  background: rgb(53,53,57);
+background: linear-gradient(90deg, rgba(53,53,57,1) 100%, rgba(10,10,10,1) 100%, rgba(0,212,255,1) 100%);
+ color:violet;
+}
+
+
+button.operator_extra:hover{
+  background: linear-gradient(90deg, #d35400, #c0392b);
+}
